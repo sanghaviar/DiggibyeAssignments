@@ -1,6 +1,4 @@
 
-#Replace all ______ with rjust, ljust or center.
-
 def allign(thickness,c):
     # Top Cone
     for i in range(thickness):
