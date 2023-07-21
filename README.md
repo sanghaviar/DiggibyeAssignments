@@ -1,5 +1,6 @@
 # Python
 **Problem 1**
+
 Consider a list (list = []). You can perform the following commands:
 insert i e: Insert integer  at position .
 print: Print the list.
@@ -13,6 +14,7 @@ Initialize your list and read in the value of  followed by  lines of commands wh
 Iterate through each command in order and perform the corresponding operation on your list.
 
 **Problem 2**
+
 create dictionary containing key/value pairs of name:[marks] for a list of students.
 Print the average of the marks array for the student name provided, showing 2 places after the decimal.
 
