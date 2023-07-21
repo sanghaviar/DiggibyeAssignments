@@ -14,3 +14,9 @@ for i in range(n):
   if email_validation(email):
     emails.append(email)
 print(sorted(emails))
+"""
+abc@gamil.com 
+xyyz12@gmail.com 
+ab123@gmail.in
+
+"""
