@@ -56,6 +56,51 @@ write a code to find the day on the given particular date
 
 Using namedtuples calculate the average marks of the student spreadshhets
 
+**Problem 10**
+write a code to find the absolute difference in seconds between two given timestamps provided in a specific format, including the time zone offset. To calculate 
+the difference, we convert both timestamps to UTC (Universal Coordinated Time) to account for different time zones and then find the time difference in seconds, 
+taking the absolute value for a non-negative result.
+
+**Problem 11**
+
+write a code to find floor,ceil,rint 
+
+**Problem 12**
+
+Given a 2-D array with dimensions N x M
+The task is to perform the min function over axis  and then find the max of that.
+
+**Problem 13**
+
+Given a square matrix A with dimensions N x N. The  task is to find the determinant. 
+Note: Round the answer to 2 places after the decimal.
+
+**Problem 14**
+
+There is an array of  integers. There are also  disjoint sets, A and B , each containing m integers. You like all the integers in set A and dislike all the 
+integers in set B.Initial Happiness is 0.For each integer i in the array, if i belong to A, ass 1 to your hapiness. If i belong to B, you add -1 to your
+happiness
+Otherwise your happiness does not change.
+
+**Problem 15**
+
+Given n words. Some words may repeat. For each word, output its number of occurrences.The output order should correspond with the input order of apperance of the 
+word.
+
+**Problem 16**
+There is a Horizontal row of n cubes. The length of each cube is given. We need create a new vertical pile of cubes. The New pile should follow the specified 
+directions. when stacking cube should pick only either leftmost or rightmost cube each time.
+Print "YES" if it is possible to stack the cubes.Otherwise print "NO"
+
+**Problem 17**
+
+Given a list of N lowercase English letters. For a given integer K, you can select any K indices with a uniform probability from the list.
+Find the probability that at least one of the K indices selected will contain the letter: 'a'.
+
+**Problem 18**
+
+Given an integer N followed by N email addresses.The task is to print a list containing only valid email addresses in lexicographical order.
+
 
 
 
