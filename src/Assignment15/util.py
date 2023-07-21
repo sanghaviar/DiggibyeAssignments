@@ -1,4 +1,5 @@
 def word_order():
+    # getting input from user
     n = int(input().strip())
     counter = {}
     words = []
