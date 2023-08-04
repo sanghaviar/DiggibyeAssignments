@@ -56,7 +56,7 @@ write a code to find the day on the given particular date
 
 **Problem 9**
 
-Using namedtuples calculate the average marks of the student spreadshhets
+Using namedtuples calculate the average marks of the student spreadsheets
 
 **Problem 10**
 write a code to find the absolute difference in seconds between two given timestamps provided in a specific format, including the time zone offset. To calculate 
