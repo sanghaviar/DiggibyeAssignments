@@ -16,7 +16,29 @@ def convert_number(number):
 
 class MyTestCase(unittest.TestCase):
 
-    def test_something(self):
+    def test_case1(self):
+        number = 3  # any integer
+        expected_output = convert_number(number)
+        x = util.print_formatted(number)
+
+        try:
+            self.assertEqual(x, expected_output)
+        except AssertionError:
+            print("Assertion Error")
+            raise
+
+    def test_case2(self):
+        number = 6 # any integer
+        expected_output = convert_number(number)
+        x = util.print_formatted(number)
+
+        try:
+            self.assertEqual(x, expected_output)
+        except AssertionError:
+            print("Assertion Error")
+            raise
+
+    def test_case3(self):
         number = 3  # any integer
         expected_output = convert_number(number)
         x = util.print_formatted(number)

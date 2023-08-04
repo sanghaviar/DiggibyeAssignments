@@ -8,3 +8,4 @@ def average(n,student_marks,query_name):
 
 
 
+

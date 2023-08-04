@@ -27,7 +27,7 @@ def merge_string(string,k):
 
 
 class MyTestCase(unittest.TestCase):
-    def test_something(self):
+    def test_case1(self):
         string = "AAABCADDE"
         k = 3
         expected_output = merge_string(string,k)
@@ -37,8 +37,27 @@ class MyTestCase(unittest.TestCase):
         except AssertionError:
             print("Assertion error")
             raise
+    def test_case2(self):
+        string = "AJYUINKOUY"
+        k = 3
+        expected_output = merge_string(string,k)
+        x = util.merge_the_tools(string,k)
+        try:
+           self.assertEqual(x, expected_output)
+        except AssertionError:
+            print("Assertion error")
+            raise
 
-
+    def test_case3(self):
+        string = "AAOHJLTYU"
+        k = 4
+        expected_output = merge_string(string, k)
+        x = util.merge_the_tools(string, k)
+        try:
+            self.assertEqual(x, expected_output)
+        except AssertionError:
+            print("Assertion error")
+            raise
 
 
 if __name__ == '__main__':

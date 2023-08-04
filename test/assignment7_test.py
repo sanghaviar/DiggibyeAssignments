@@ -19,7 +19,7 @@ def allignment(thickness,c):
             thickness * 6))
 
 class MyTestCase(unittest.TestCase):
-    def test_something(self):
+    def test_case1(self):
         c = 'H'
         thickness = 3
         x = util.allign(thickness,c)
@@ -29,6 +29,29 @@ class MyTestCase(unittest.TestCase):
         except AssertionError:
             print("Assertion Error")
             raise
+
+    def test_case2(self):
+        c = 'M'
+        thickness = 2
+        x = util.allign(thickness,c)
+        expected_result = allignment(thickness,c)
+        try:
+            self.assertEqual(x,expected_result)
+        except AssertionError:
+            print("Assertion Error")
+            raise
+
+    def test_case3(self):
+        c = 'S'
+        thickness = 9
+        x = util.allign(thickness,c)
+        expected_result = allignment(thickness,c)
+        try:
+            self.assertEqual(x,expected_result)
+        except AssertionError:
+            print("Assertion Error")
+            raise
+
 
 
 if __name__ == '__main__':

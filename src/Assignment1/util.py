@@ -5,7 +5,7 @@ def list_operations(N):
     mylist = []
     # For loop iterates to perform number of operations
     for i in range(N):
-    #     # storing the values in variable command, converting to lower case, and splitting the values
+    #   # storing the values in variable command, converting to lower case, and splitting the values
         command = input().lower().split()
         # matching the command
         match (command[0]):

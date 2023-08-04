@@ -1,5 +1,10 @@
 from util import *
-word_order()
+n = int(input().strip())
+words_list = []
+for _ in range(n):
+    word = input().strip()
+    words_list.append(word)
+word_order(n,words_list)
 
 
 

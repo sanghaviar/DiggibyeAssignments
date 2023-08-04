@@ -1,25 +1,43 @@
 import unittest
 from src.Assignment15 import util
-def test_word_order():
-    n = int(input().strip())
+
+"""
+Given n words. Some words may repeat. 
+For each word, output its number of occurrences.
+The output order should correspond with the input order of apperance of the word.
+"""
+
+
+def test_word_order(n, words_list):
     counter = {}
     words = []
-    for i in range(n):
-        word = input().strip()
+    for word in words_list:
         if word in counter:
             counter[word] += 1
         else:
             counter[word] = 1
             words.append(word)
-    # print(len(words))
-    # print(' '.join([str(counter[word]) for word in words]))
-
 
 class MyTestCase(unittest.TestCase):
-    def test_something(self):
-        expected_output = test_word_order()
-        x = util.word_order()
-        self.assertEqual(x,expected_output)
+    def test_case1(self):
+        n = 3
+        words_list = ["cat", "rat", "bat", "cat"]
+        expected_output = test_word_order(n, words_list)
+        x = util.word_order(n, words_list)
+        self.assertEqual(x, expected_output)
+    def test_case2(self):
+        n = 4
+        words_list = ["python", "java", "pyspark", "spark"]
+        expected_output = test_word_order(n, words_list)
+        x = util.word_order(n, words_list)
+        self.assertEqual(x, expected_output)
+
+    def test_case3(self):
+        n = 3
+        words_list = ["map", "globe", "earth", "sky"]
+        expected_output = test_word_order(n, words_list)
+        x = util.word_order(n, words_list)
+        self.assertEqual(x, expected_output)
 
 
 if __name__ == '__main__':

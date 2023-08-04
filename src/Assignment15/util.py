@@ -1,10 +1,10 @@
-def word_order():
+def word_order(n,words_list):
     # getting input from user
-    n = int(input().strip())
+    # n = int(input().strip())
     counter = {}
     words = []
-    for i in range(n):
-        word = input().strip()
+    for word in words_list:
+    #     word = input().strip()
         if word in counter:
             counter[word] += 1
         else:

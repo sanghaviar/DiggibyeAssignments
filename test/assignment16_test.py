@@ -2,20 +2,12 @@ import unittest
 from src.Assignment16 import util
 
 '''
-n = 1
-k = 6
-mylist = [4 3 2 1 3 4]
+There is a Horizontal row of n cubes. 
+The length of each cube is given. We need create a new vertical pile of cubes.
+The New pile should follow the specified directions.
+when stacking cube should pick only either leftmost or rightmost cube each time. 
+Print "YES" if it is possible to stack the cubes.Otherwise print "NO"
 
-
-2
-6
-4 3 2 1 3 4
-3
-1 3 2
-
-# num_of_test = 1
-# num_of_cubes = 6
-# side_length_cubes = [4,3,2,1,3,4]
 '''
 
 def test_pilingUp(side_length):
@@ -44,22 +36,28 @@ def test_pilingUp(side_length):
     return
 
 class MyTestCase(unittest.TestCase):
-    def test_something(self):
-
-        global side_lengths
-        num_of_tests = int(input())
-        for i in range(num_of_tests):
-            n = int(input())
-            sideLengths_str = input().split()
-            side_lengths = []
-            for num in sideLengths_str:
-                side_lengths.append(int(num))
-
-        x = util.pilingUp(side_lengths)
-        expected_output = test_pilingUp(side_lengths)
-
+    def test_case1(self):
+        side = [1,2,3,4]
+        x = util.pilingUp(side)
+        output = test_pilingUp(side)
         try:
-            self.assertEqual(x,expected_output)
+            self.assertEqual(x,output)
+        except AssertionError:
+            print("Assertion Error")
+    def test_case2(self):
+        side = [5,2,3,4,1]
+        x = util.pilingUp(side)
+        output = test_pilingUp(side)
+        try:
+            self.assertEqual(x, output)
+        except AssertionError:
+            print("Assertion Error")
+    def test_case3(self):
+        side = [5,4,3,2,1,3,4,5]
+        x = util.pilingUp(side)
+        output = test_pilingUp(side)
+        try:
+            self.assertEqual(x, output)
         except AssertionError:
             print("Assertion Error")
 

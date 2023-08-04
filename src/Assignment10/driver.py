@@ -5,6 +5,5 @@ t = int(input())
 for i in range(t):
     t1 = input()
     t2 = input()
-    print(time_delta(t1, t2))
-
+    time_delta(t1,t2)
 
